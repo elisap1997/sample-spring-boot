@@ -2,8 +2,8 @@ pipeline {
     agent none
         environment {
         ENV_DOCKER = credentials('dockerhub')
-        DOCKERIMAGE = "dummy/dummy"
-        EKS_CLUSTER_NAME = "demo-cluster"
+        DOCKERIMAGE = "elisap997/sample-spring-boot"
+        EKS_CLUSTER_NAME = "sre-lab"
     }
     stages {
         stage('build') {
